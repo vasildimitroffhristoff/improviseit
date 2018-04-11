@@ -1,0 +1,35 @@
+.header {
+    height: 95vh;
+    background-image: linear-gradient(
+            to right,
+            rgba($color-primary, 0.80),
+            rgba($color-primary-dark, 0.80)), 
+            url(../img/1.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+
+    &__logo-box {
+        position: absolute;
+        top:4rem;
+        left:4rem;
+    }
+
+    &__logo {
+        max-width: 6rem;
+        cursor: pointer;
+        animation-name: fadeIn;
+        animation-duration: 1400ms;
+        animation-delay: 1600ms;
+        animation-fill-mode: backwards;
+    }
+    
+    &__text-box {
+        position: absolute;
+        left:50%;
+        top:47.5%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
