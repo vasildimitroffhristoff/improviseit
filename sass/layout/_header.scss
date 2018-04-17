@@ -33,3 +33,20 @@
         text-align: center;
     }
 }
+
+.heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-image: linear-gradient(to right, rgba($color-primary, .75), $color-primary-dark);
+    display: inline-block;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 2px;
+    transition: all 200ms;
+
+    &:hover {
+        transform: skewY(2deg) skewX(5deg) scale(1.05);
+        text-shadow: .5rem 1rem 2rem rgba(0,0,0,.2);
+    }
+}

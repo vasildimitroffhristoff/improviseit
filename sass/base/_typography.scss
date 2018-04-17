@@ -24,3 +24,17 @@
         animation-duration: 1300ms;
     }
 }
+
+.heading-tertiary {
+    font-size: $default-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    font-size: 1.5rem;
+
+    &:not(last-child) {
+        margin-bottom: 4rem;        
+    }
+}
